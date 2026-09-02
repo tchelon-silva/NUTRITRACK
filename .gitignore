@@ -1,0 +1,6 @@
+# Pasta com a proposta inicial do projeto
+propostaProjeto/
+
+# Ficheiros temporários criados pelo Python
+__pycache__/
+*.pyc

@@ -1,0 +1,36 @@
+{
+    "registos": [
+        {
+            "id": 1,
+            "data": "02/09/2026",
+            "refeicao": "pequeno-almoço",
+            "alimento": "teste",
+            "quantidade": 1.0,
+            "quantidade_por_unidade": 1.0,
+            "unidade_medida": "g",
+            "calorias_por_unidade": 100.0,
+            "proteinas_por_unidade": 20.0,
+            "hidratos_carbono_por_unidade": 15.0,
+            "gorduras_por_unidade": 10.0
+        },
+        {
+            "id": 2,
+            "data": "02/09/2026",
+            "refeicao": "pequeno-almoço",
+            "alimento": "0",
+            "quantidade": 10.0,
+            "quantidade_por_unidade": 2.0,
+            "unidade_medida": "ml",
+            "calorias_por_unidade": 0.0,
+            "proteinas_por_unidade": 0.0,
+            "hidratos_carbono_por_unidade": 0.0,
+            "gorduras_por_unidade": 0.0
+        }
+    ],
+    "objetivos": {
+        "calorias": 2000.0,
+        "proteinas": 80.0,
+        "hidratos_carbono": 75.0,
+        "gorduras": 50.0
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "registos": [
+        {
+            "id": 1,
+            "data": "02/09/2026",
+            "refeicao": "pequeno-almoço",
+            "alimento": "ovos mexidos",
+            "quantidade": 150.0,
+            "quantidade_por_unidade": 1.0,
+            "unidade_medida": "g",
+            "calorias_por_unidade": 10.0,
+            "proteinas_por_unidade": 5.0,
+            "hidratos_carbono_por_unidade": 3.0,
+            "gorduras_por_unidade": 8.0
+        },
+        {
+            "id": 2,
+            "data": "02/09/2026",
+            "refeicao": "pequeno-almoço",
+            "alimento": "ovos",
+            "quantidade": 1.0,
+            "quantidade_por_unidade": 150.0,
+            "unidade_medida": "g",
+            "calorias_por_unidade": 150.0,
+            "proteinas_por_unidade": 5.0,
+            "hidratos_carbono_por_unidade": 5.0,
+            "gorduras_por_unidade": 5.0
+        }
+    ],
+    "objetivos": null
+}
