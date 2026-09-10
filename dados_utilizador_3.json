@@ -1,0 +1,23 @@
+{
+    "registos": [
+        {
+            "id": 1,
+            "data": "07/09/2026",
+            "refeicao": "pequeno-almoço",
+            "alimento": "Pão",
+            "quantidade": 1.0,
+            "quantidade_por_unidade": 100.0,
+            "unidade_medida": "g",
+            "calorias_por_unidade": 150.0,
+            "proteinas_por_unidade": 3.0,
+            "hidratos_carbono_por_unidade": 15.0,
+            "gorduras_por_unidade": 2.0
+        }
+    ],
+    "objetivos": {
+        "calorias": 2000.0,
+        "proteinas": 75.0,
+        "hidratos_carbono": 120.0,
+        "gorduras": 60.0
+    }
+}

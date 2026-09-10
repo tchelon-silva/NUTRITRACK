@@ -490,7 +490,7 @@ def mostrar_menu():
     print("4 - Definir objetivos")
     print("5 - Acompanhar objetivos")
     print("6 - Remover registo")
-    print("0 - Sair")
+    print("0 - Logout")
 
     print("=" * 60)
 
@@ -596,25 +596,8 @@ def menu_autenticacao():
             )
 
 
-def main():
-
-    print("\nBem-vindo ao NUTRITRACK!")
-
-    # Primeiro é necessário criar uma conta ou iniciar sessão.
-    utilizador = menu_autenticacao()
-
-    if utilizador is None:
-        return
-
-    # Depois do login, os dados são carregados do ficheiro
-    # específico desse utilizador.
-    id_utilizador = utilizador["id"]
-
-    dados = carregar_dados(id_utilizador)
-
-    print(
-        f"\nOlá, {utilizador['nome']}!"
-    )
+# MENU DO UTILIZADOR AUTENTICADO
+def menu_principal(dados, id_utilizador):
 
     while True:
 
@@ -660,16 +643,49 @@ def main():
         elif opcao == "0":
 
             print(
-                "\nObrigado por utilizar o NUTRITRACK!"
+                "\nSessão terminada com sucesso."
             )
 
-            break
+            return
 
         else:
 
             print(
                 "\nErro: opção inválida."
             )
+
+
+def main():
+
+    print("\nBem-vindo ao NUTRITRACK!")
+
+    # Permite iniciar e terminar várias sessões sem fechar a aplicação.
+    while True:
+
+        # É necessário criar uma conta ou iniciar sessão.
+        utilizador = menu_autenticacao()
+
+        # Se o utilizador escolher "Sair", termina a aplicação.
+        if utilizador is None:
+            return
+
+        # Depois do login, os dados são carregados do ficheiro
+        # específico desse utilizador.
+        id_utilizador = utilizador["id"]
+
+        dados = carregar_dados(id_utilizador)
+
+        print(
+            f"\nOlá, {utilizador['nome']}!"
+        )
+
+        # Abre o menu principal do utilizador autenticado.
+        # Quando for feito logout, esta função termina
+        # e o programa volta ao menu de autenticação.
+        menu_principal(
+            dados,
+            id_utilizador
+        )
 
 
 if __name__ == "__main__":

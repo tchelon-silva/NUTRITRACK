@@ -1,0 +1,23 @@
+{
+    "registos": [
+        {
+            "id": 2,
+            "data": "10/09/2026",
+            "refeicao": "pequeno-almoço",
+            "alimento": "teste",
+            "quantidade": 1.0,
+            "quantidade_por_unidade": 200.0,
+            "unidade_medida": "ml",
+            "calorias_por_unidade": 200.0,
+            "proteinas_por_unidade": 12.0,
+            "hidratos_carbono_por_unidade": 8.0,
+            "gorduras_por_unidade": 8.0
+        }
+    ],
+    "objetivos": {
+        "calorias": 2000.0,
+        "proteinas": 100.0,
+        "hidratos_carbono": 80.0,
+        "gorduras": 60.0
+    }
+}
